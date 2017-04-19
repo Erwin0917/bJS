@@ -6,10 +6,10 @@ function getDate(){
         year = date.getFullYear(),
         formatDate;
         
-        if(month < 11){
+        if(month < 10){
             month = "0" + month;
         }
-        formatDate =  day + "." + month + "." + year + "." ; 
+        formatDate =  (day < 10 ? "0" + day : day) + "." + month + "." + year + "." ; // day poprawiony po konsultacjach live.
      
     return formatDate;
 }

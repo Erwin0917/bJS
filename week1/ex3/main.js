@@ -1,5 +1,5 @@
 function toBoolean(v){
-    if(v !== "" && v){ // jeśli v zostało podane i jeśli nie jest pustym ciągiem znaków
+    if(v){ 
         return true;
     }else{
         return false;
