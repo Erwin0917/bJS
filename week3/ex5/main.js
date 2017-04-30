@@ -1,47 +1,33 @@
 //(function(){
 
-//Accept: application/json
-
-function getJSON(url, successFn, errorFn) {
-    var xhr = new XMLHttpRequest(),
-        data = null;
-
-    xhr.open("GET", url, true);
-
-
-
-    xhr.onreadystatechange = function() {
-
-        if (xhr.readyState === 4 && xhr.status >= 200 && xhr.status < 300) {
-            data = JSON.parse(xhr.response);
-            successFn(data);
-        }
-
-    };
-
-    xhr.onabort = function() { errorFn(xhr.status); };
-    xhr.onerror = function() {
-        errorFn(xhr.status)
-    };
+function isSiteNumber(site){
+    var code = new RegExp("\\?page=(\\d+)", "ig"),
+        find = code.exec(site);
+    
+     if ( find ){
+        return find[1];
+    }
+    return null;
+}
 
 
-    xhr.setRequestHeader("Accept", "application/json");
 
-    xhr.send(null); //wysyłamy zapytanie - po wyslaniu nie mozemy juz nic z obiektem zrobic
+function getPage(){
+
+    var pageAdres = window.location.href,
+        //afterPars = (isSiteNumber(pageAdres) >= 0) ? isSiteNumber(pageAdres) : null, po małych zmianach niepotrzebne
+        afterPars = isSiteNumber(pageAdres);
+
+
+       
+
+
+   return console.log(afterPars);
 
 
 }
 
 
-var url = "http://code.eduweb.pl/bootcamp/users/";
-
-getJSON(url, function(data) {
-    console.log("Sukces");
-    console.log(data);
-}, function(err) {
-    console.log("Wystąpił błąd!");
-    console.log(err);
-});
-
+getPage();
 
 //})();
