@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Week4 - exercise 1</title>
+    
+    <style>
+        div{
+            min-height: 70px;
+            border: 2px solid goldenrod;
+            margin: 15px 0;
+        }       
+        .sel{
+            border: 2px solid red;
+        }
+        
+    </style>
+    
+    
+</head>
+<body>
+
+    <h1>Tydzien 4 - zadanie 1</h1>
+    <h2>Selektory w jQuery</h2>
+
+<nav>
+    <ul>
+        <li><a href="#">Li1</a></li>
+        <li><a href="http://www.eduweb.pl">Li2</a></li>
+        <li><a href="#">Li3</a></li>
+        <li><a href="#">Li4</a></li>
+        <li><a href="#">Li5</a></li>
+    </ul>
+</nav>
+
+<div class="grid"></div>
+<div class="grid-12"></div>
+<div class="grid"></div>
+<div class="grid-12"></div>
+
+<label><input type="checkbox" checked>checkbox1</label>
+<label><input type="checkbox" >checkbox2</label>
+<label><input type="checkbox" >checkbox3</label>
+<label><input type="radio" checked>radio1</label>
+<label><input type="radio" >radio2</label>
+<label><input type="radio" >radio3</label>
+
+
+
+
+
+<div class="text grid">
+    <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </p>
+    <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+    </p>
+</div>
+
+
+<div class="pagi">
+    <ul>
+        <li><span class="pagination-item">Span</span></li>
+        <li class="pagination-item">Nie span</li>
+        <li><span class="pagination-item">Span</span></li>
+        <li class="pagination-item">Nie span</li>
+
+    </ul>
+
+</div>
+
+
+<button type="button" id="btn--grid">Zaznacz grid</button>
+<button type="button" id="btn--grid-12">Zaznacz grid-12</button>
+<button type="button" id="btn--grid-all">Zaznacz wszystkie grid</button>
+<button type="button" id="btn--href">Zaznacz a[href http]</button>
+<button type="button" id="btn--input">Zaznacz input no checked</button>
+<button type="button" id="btn--p">Zaznacz pierwszy p</button>
+<button type="button" id="btn--pagin">Zaznacz pagination-item not span</button>
+
+
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="main.js" ></script>
+</body>
+</html>
