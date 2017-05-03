@@ -4,6 +4,9 @@
 
 function Toggler(item){
     
+    if( !(this instanceof Toggler) ) {
+        return new Toggler(selector);
+    }
     this.item = document.querySelector(item); // szukamy elementu i zapisujemy do this.item
     
     
