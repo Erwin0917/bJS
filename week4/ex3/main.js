@@ -7,7 +7,7 @@
 	$("button").on("click", function(){
         var inputVal = $("input").val();
         
-        if(inputVal.length != 0){
+        if($.trim(inputVal) != ""){
              var li = $("<li></li>", {
                 text: inputVal
             });
