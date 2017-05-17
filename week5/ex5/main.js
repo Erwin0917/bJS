@@ -2,7 +2,8 @@ const urls = [
     "http://code.eduweb.pl/kurs-jquery/images/photo-1.jpg",
     "http://code.eduweb.pl/kurs-jquery/images/photo-2.jpg",
     "http://code.eduweb.pl/kurs-jquery/images/photo-3.jpg",
-    "http://code.eduweb.pl/kurs-jquery/images/photo-4.jpg"
+    "http://code.eduweb.pl/kurs-jquery/images/photo-4.jpg",
+    "http://code.eduweb.pl/kurs-jquery/images/photo-5.jpg"
 ];
 
 
@@ -23,7 +24,7 @@ function preloadImages(urls){
                 }
             }
 
-            img.onerror - function(){
+            img.onerror = function(){
 
                 reject( new Error(" Błąd ładowania ") );
             }
