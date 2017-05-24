@@ -68,6 +68,7 @@ getJSON(url, function(data) {
 
 
 
+
 }, function(err) {
     console.log("Wystąpił błąd!");
     console.log(err);

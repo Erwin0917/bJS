@@ -1,4 +1,5 @@
 Array.myFrom = function(elem, fn, ts) {
+
     
     var elemArr = [],
         length = elem.length;
@@ -15,10 +16,10 @@ Array.myFrom = function(elem, fn, ts) {
         return elemArr;
     }else if(typeof(fn) === "function") {
         
-        var mapArr = elemArr.map(fn);
+        var elemArr = elemArr.map(fn, ts);
 
-        fn.bind(this);
-        return mapArr;
+        
+        return elemArr;
 
     }
 
